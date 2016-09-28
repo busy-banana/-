@@ -1,0 +1,93 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	text-decoration: none;
+}
+
+#container{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 680px;
+	height: 360px;
+ 	overflow: hidden; 
+	position: relative;
+}
+
+#img-list{
+	transition: all 10s linear 0s;
+
+	width: 4200px;
+	position: absolute;
+	z-index: 1;
+}
+
+#img-list a img{
+	float: left;
+}
+
+#go-left{
+	width: 30px;
+	height: 60px;
+}
+
+#go-right{
+	width: 30px;
+	height: 60px;
+}
+
+#btns{
+	position: absolute;
+	z-index: 2;
+	top: 340px;
+	left: 250px;
+}
+
+#btns span{
+	float: left;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #8C8C8C;
+	background-color: #8C8C8C;
+	margin-left: 20px;
+	-webkit-border-radius: 50%;     /* for 谷歌浏览器 */
+	-moz-border-radius: 50%;		/* for 火狐浏览器 */
+	-ms-border-radius: 50%;			/* for IE浏览器   */
+	border-radius: 50%;
+}
+
+#btns .selected{
+	background-color: #E6551D;
+	border: 1px solid #E6551D;
+}
+
+.arrow{
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-ms-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+	position: absolute;
+	z-index: 2;
+	top: 160px;
+	text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+
+.arrow:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+#container:hover .arrow{
+ 	display: block;
+ }
+ 
+#go-left{
+	left: 0;
+}
+
+#go-right{
+	right: 0;
+}
